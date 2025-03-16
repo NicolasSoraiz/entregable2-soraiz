@@ -3,14 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Tienda</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>Mundo Digital</title>
 </head>
 <body>
-    <h1>Simulador de Tienda de Notebook</h1>
-    <p>este simulador permite al usuario comprar notebooks de distintos modelos. cada notebook tiene un precio fijo y un stock inicial de 10 unidades. el usuario podra visualizar su saldo y el stock disponible en la consola de javascript.</p>
-    <button onclick="mostrarEstado()">Mostrar Estado</button>
-    <button onclick="comprarNotebook()">Comprar Notebook</button>
-    <button onclick="salirSimulador()">Salir</button>
-    <script src="javascript.js"></script>
+    <h1>Mundo Digital</h1>
+    <p>selecciona una notebook para comprar</p>
+    <div id="saldo">saldo disponible: $5000</div>
+    <section class="productos-destacados">
+        <h2>Productos Destacados</h2>
+        <div class="contenedor-productos-destacados">
+            <div>
+                <img src="./img/Notebook1.jpg" alt="">
+                <h3>Notebook Acer Aspire</h3>
+                <a href="#" class="boton comprar-btn" data-index="0">comprar</a>
+            </div>
+            <div>
+                <img src="./img/notebook-2.jpg" alt="">
+                <h3>Notebook Lenovo Thinkpad X1</h3>
+                <a href="#" class="boton comprar-btn" data-index="1">comprar</a>
+            </div>
+            <div>
+                <img src="./img/notebook-3.jpg" alt="">
+                <h3>Notebook LOQ Gen 9</h3>
+                <a href="#" class="boton comprar-btn" data-index="3">comprar</a>
+            </div>
+        </div>
+    </section>
+    <section class="productos">
+        <h2>Productos</h2>
+        <div class="contenedor-productos">
+            <div>
+                <img src="./img/notebook-4.jpg" alt="">
+                <h3>Notebook Gamer Acer Nitro 5</h3>
+                <a href="#" class="boton comprar-btn" data-index="2">comprar</a>
+            </div>
+            <div>
+                <img src="./img/notebook-5.jpg" alt="">
+                <h3>Notebook Asus TUF Gaming A15</h3>
+                <a href="#" class="boton comprar-btn" data-index="4">comprar</a>
+            </div>
+            <div>
+                <img src="./img/notebook-6.jpg" alt="">
+                <h3>Notebook HP</h3>
+                <a href="#" class="boton comprar-btn" data-index="5">comprar</a>
+            </div>
+        </div>
+    </section>
+    <section class="lista-de-notebooks-disponibles">
+        <h2>Lista de Notebooks Disponibles</h2>
+        <div>
+            <ul id="Lista-notebooks"></ul>
+        </div>
+    </section>
+    <script src="./Js/javascript.js"></script>
 </body>
 </html>
+
+

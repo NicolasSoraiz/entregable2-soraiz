@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+body {
+    font-family: arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*! ---- PRODUCTOS DESTACADOS ---- */
+
+.productos-destacados h2 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.productos-destacados .contenedor-productos-destacados {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.productos-destacados div h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: black;
+}
+
+.productos-destacados div a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+
+.productos-destacados div img {
+    width: 210px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contenedor-productos-destacados div {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; box-shadow: 0.3s ease;
+}
+
+.productos-destacados {
+    min-height: 500px;
+}
+
+/*! ---- PRODUCTOS DESTACADOS ---- */
+
+/*! ---- PRODUCTOS ---- */
+
+.productos h2 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.productos .contenedor-productos {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.productos div h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: black;
+}
+
+.productos div a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+
+.productos div img {
+    width: 210px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contenedor-productos div {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; box-shadow: 0.3s ease;
+}
+
+.productos {
+    min-height: 500px;
+    margin-bottom: 100px;
+}
+
+/*! ---- PRODUCTOS ---- */
+
+/*! ---- LISTA DE PRODUCTOS DISPONIBLES ---- */
+.lista-de-notebooks-disponibles h2 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+
+/*! ---- LISTA DE PRODUCTOS DISPONIBLES ---- */
