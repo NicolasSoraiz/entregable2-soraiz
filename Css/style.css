@@ -15,12 +15,15 @@ ul {
 
 body {
     font-family: arial, sans-serif;
+    background-color: #F5F5F5;
     text-align: center;
 }
 
+/*! ---- ENCABEZADO ---- */
+
 h1 {
-    background-color: black;
-    color: white;
+    background-color: #496d38;
+    color: #ffffff;
     padding: 15px;
     top: 0;
     z-index: 1000;
@@ -32,140 +35,168 @@ h1 {
     overflow: hidden;
 }
 
-li {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #000;
+/*! ---- SALDO ---- */
+
+#saldo {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #040404;
+}
+
+/*! ---- PRODUCTOS DESTACADOS Y PRODUCTOS ---- */
+
+.productos-destacados h2, .productos h2 {
+    background-color: #496d38;
+    color: #ffffff;
+    padding: 15px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.productos-destacados #contenedor-productos-destacados, #contenedor-productos {
     display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.productos-destacados div h3, .productos div h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #333333;
+}
+
+.productos-destacados div a, .productos div a, button.boton {
+    background-color: #8AA899;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.productos-destacados div a:hover, .productos div a:hover, button.boton:hover {
+    transition: 0.7s;
+    background-color: #75b358;
+}
+
+.productos-destacados div img, .productos div img {
+    width: 210px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#contenedor-productos-destacados div, #contenedor-productos div {
+    width: 280px;
+    min-height: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; box-shadow: 0.3s ease;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border: 3px solid #228B22;
 }
 
+.productos-destacados, .productos {
+    min-height: 500px;
+}
 
-/*! ---- PRODUCTOS DESTACADOS ---- */
+/*! ---- CARRITO DE COMPRAS ---- */
 
-.productos-destacados h2 {
-    background-color: black;
-    color: white;
+.carrito {
+    background-color: #fff;
+    padding: 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.carrito h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#lista-carrito li {
     padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
 }
 
-.productos-destacados .contenedor-productos-destacados {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    flex-wrap: wrap;
-}
+/*! ---- BOTON DE CANCELAR LA COMPRA ---- */
 
-.productos-destacados div h3 {
-    font-size: 22px;
-    margin: 15px 0;
-    color: black;
-}
-
-.productos-destacados div a {
-    background-color: black;
-    color: white;
+button.cancelar-compra {
+    background-color: #d9534f;
+    color: #ffffff;
     padding: 10px;
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+    margin-left: 320px;
 }
 
-
-.productos-destacados div img {
-    width: 210px;
-    height: auto;
-    margin-bottom: 20px;
+button.cancelar-compra:hover {
+    background-color: #c9302c;
 }
 
-.contenedor-productos-destacados div {
-    border-radius: 10px;
-    padding: 20px;
+/*! ---- WHATSAPP ---- */
+
+.whatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.whatsapp a img {
+    width: 70px;
+}
+
+/*! ---- FOOTER ---- */
+
+.footer {
+    background-color: #3D3D3D;
+    color: #ffffff;
     text-align: center;
-    flex-basis: calc(25% - 20px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease; box-shadow: 0.3s ease;
+    padding: 20px 0;
+    font-size: 16px;
+    margin-top: 30px;
 }
 
-.productos-destacados {
-    min-height: 500px;
+.footer p {
+    margin: 10px 0;
 }
 
-/*! ---- PRODUCTOS DESTACADOS ---- */
-
-/*! ---- PRODUCTOS ---- */
-
-.productos h2 {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 5px;
+.iconos-redes {
+    margin: 10px 0;
 }
 
-.productos .contenedor-productos {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    flex-wrap: wrap;
+.iconos-redes a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
-.productos div h3 {
-    font-size: 22px;
-    margin: 15px 0;
-    color: black;
+.iconos-redes img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
 }
 
-.productos div a {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
+.iconos-redes img:hover {
+    transform: scale(1.2);
 }
 
-
-.productos div img {
-    width: 210px;
-    height: auto;
-    margin-bottom: 20px;
+.copyright {
+    font-size: 14px;
+    opacity: 0.7;
 }
-
-.contenedor-productos div {
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    flex-basis: calc(25% - 20px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease; box-shadow: 0.3s ease;
-}
-
-.productos {
-    min-height: 500px;
-    margin-bottom: 100px;
-}
-
-/*! ---- PRODUCTOS ---- */
-
-/*! ---- LISTA DE PRODUCTOS DISPONIBLES ---- */
-.lista-de-notebooks-disponibles h2 {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-
-
-/*! ---- LISTA DE PRODUCTOS DISPONIBLES ---- */

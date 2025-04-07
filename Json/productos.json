@@ -1,8 +1,43 @@
 [
-    { "nombre": "Notebook Acer Aspire", "precio": 1200, "stock": 10 },
-    { "nombre": "Notebook Lenovo Thinkpad L15", "precio": 1000, "stock": 10 },
-    { "nombre": "Notebook Gamer Acer Nitro 5", "precio": 1500, "stock": 10 },
-    { "nombre": "Notebook LOQ Gen 9", "precio": 1300, "stock": 10 },
-    { "nombre": "Notebook Asus TUF Gaming A15", "precio": 1400, "stock": 10 },
-    { "nombre": "Notebook HP", "precio": 1600, "stock": 10 }
+    { 
+        "nombre": "Notebook Acer Aspire",
+        "precio": 1200,
+        "stock": 10,
+        "imagen":"./img/Notebook1.jpg"
+    },
+
+    { 
+        "nombre": "Notebook Lenovo Thinkpad L15", 
+        "precio": 1000, 
+        "stock": 10,
+        "imagen":"./img/notebook-2.jpg"
+    },
+
+    { 
+        "nombre": "Notebook LOQ Gen 9", 
+        "precio": 1300, 
+        "stock": 10,
+        "imagen":"./img/notebook-3.jpg"
+    },
+
+    { 
+        "nombre": "Notebook Gamer Acer Nitro 5", 
+        "precio": 1500, 
+        "stock": 10,
+        "imagen":"./img/notebook-4.jpg"
+    },
+
+    { 
+        "nombre": "Notebook Asus TUF Gaming A15", 
+        "precio": 1400, 
+        "stock": 10,
+        "imagen":"./img/notebook-5.jpg"
+    },
+
+    { 
+        "nombre": "Notebook HP", 
+        "precio": 1600, 
+        "stock": 10,
+        "imagen":"./img/notebook-6.jpg"
+    }
 ]

@@ -4,60 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Mundo Digital</title>
 </head>
 <body>
     <h1>Mundo Digital</h1>
-    <p>selecciona una notebook para comprar</p>
     <div id="saldo">saldo disponible: $5000</div>
     <section class="productos-destacados">
         <h2>Productos Destacados</h2>
-        <div class="contenedor-productos-destacados">
-            <div>
-                <img src="./img/Notebook1.jpg" alt="">
-                <h3>Notebook Acer Aspire</h3>
-                <a href="#" class="boton comprar-btn" data-index="0">comprar</a>
-            </div>
-            <div>
-                <img src="./img/notebook-2.jpg" alt="">
-                <h3>Notebook Lenovo Thinkpad X1</h3>
-                <a href="#" class="boton comprar-btn" data-index="1">comprar</a>
-            </div>
-            <div>
-                <img src="./img/notebook-3.jpg" alt="">
-                <h3>Notebook LOQ Gen 9</h3>
-                <a href="#" class="boton comprar-btn" data-index="3">comprar</a>
-            </div>
-        </div>
+        <ul id="Lista-notebooks"></ul>
+        <div id="contenedor-productos-destacados"></div>
     </section>
     <section class="productos">
         <h2>Productos</h2>
-        <div class="contenedor-productos">
-            <div>
-                <img src="./img/notebook-4.jpg" alt="">
-                <h3>Notebook Gamer Acer Nitro 5</h3>
-                <a href="#" class="boton comprar-btn" data-index="2">comprar</a>
-            </div>
-            <div>
-                <img src="./img/notebook-5.jpg" alt="">
-                <h3>Notebook Asus TUF Gaming A15</h3>
-                <a href="#" class="boton comprar-btn" data-index="4">comprar</a>
-            </div>
-            <div>
-                <img src="./img/notebook-6.jpg" alt="">
-                <h3>Notebook HP</h3>
-                <a href="#" class="boton comprar-btn" data-index="5">comprar</a>
-            </div>
-        </div>
+        <div class="contenedor-productos" id="contenedor-productos"></div>
     </section>
-    <section class="lista-de-notebooks-disponibles">
-        <h2>Lista de Notebooks Disponibles</h2>
-        <div>
-            <ul id="Lista-notebooks"></ul>
-        </div>
+    <section id="carrito" class="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <button id="finalizar-compra-btn" class="boton">Finalizar Compra</button>
     </section>
-    <script src="./Js/javascript.js"></script>
+    <div class="whatsapp">
+        <a href="">
+            <img src="./img/whatsapp.png" alt="Icono de Whatsapp">
+        </a>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>Siguenos en redes sociales</p>
+            <div class="iconos-redes">
+                <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./img/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="./img/Instagram.png" alt="instagram"></a>
+            </div>
+            <p class="copyright">2024 Derechos Reservados:</p>
+            <a href="#">MundoDigital.com</a>
+        </div>
+    </footer>
+    <script src="./Js/javascript.js" defer></script>
 </body>
 </html>
-
-
